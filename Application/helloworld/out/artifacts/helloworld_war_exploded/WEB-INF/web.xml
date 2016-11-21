@@ -12,4 +12,38 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.jsf</url-pattern>
     </servlet-mapping>
+    <context-param>
+        <param-name>BootsFaces_USETHEME</param-name>
+        <param-value>default</param-value>
+    </context-param>
+    <context-param>
+        <param-name>BootsFaces_THEME</param-name>
+        <param-value>cerulean</param-value>
+    </context-param>
+    <context-param>
+        <param-name>net.bootsfaces.get_jquery_from_cdn</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>net.bootsfaces.get_jqueryui_from_cdn</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>net.bootsfaces.get_bootstrap_from_cdn</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>net.bootsfaces.get_fontawesome_from_cdn</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.FACELETS_DECORATORS</param-name>
+        <param-value>
+            net.bootsfaces.decorator.BootsFacesTagDecorator
+        </param-value>
+    </context-param>
+    <context-param>
+        <param-name>net.bootsfaces.defaults.decorator</param-name>
+        <param-value>false</param-value>
+    </context-param>
 </web-app>
