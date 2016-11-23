@@ -4,15 +4,22 @@
       xmlns:b="http://bootsfaces.net/ui"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets">
-<ui:composition template = "templates/common.xhtml">
+<body>
+<ui:composition>
+
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    </head>
-<body>
-<br></br><br></br><br></br><br></br><br></br>
+
+   <div>
+      <ui:insert name="header" >
+         <ui:include src="/templates/header.xhtml" />
+      </ui:insert>
+   </div>
+   <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main"><br></br><br></br><br></br>
    <form class="form-horizontal">
       <div class="form-group">
          <label class="control-label col-sm-2" for="email">Email:</label>
@@ -39,8 +46,7 @@
          </div>
       </div>
    </form>
-
-<br></br><br></br><br></br><br></br>
-</body>
+</div>
 </ui:composition>
+</body>
 </html>
