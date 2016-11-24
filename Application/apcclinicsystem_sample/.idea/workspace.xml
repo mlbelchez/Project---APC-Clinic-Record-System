@@ -75,18 +75,28 @@
       <file leaf-file-name="studentF.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/studentF.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
+            <state relative-caret-position="187">
               <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facultyF.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="facultyF.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/facultyF.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="546">
               <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staffF.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/staffF.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -107,16 +117,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header1.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/templates/header1.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,6 +161,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/studentF.xhtml" />
         <option value="$PROJECT_DIR$/web/studentF.xhtml" />
         <option value="$PROJECT_DIR$/web/facultyF.xhtml" />
+        <option value="$PROJECT_DIR$/web/staffF.xhtml" />
       </list>
     </option>
   </component>
@@ -218,6 +219,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -246,11 +251,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="PackagesPane">
         <subPane />
       </pane>
     </panes>
@@ -267,14 +268,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mlbel\Desktop\Project---APC-Clinic-Record-System\Application\apcclinicsystem_sample\web" />
       <recent name="C:\Users\mlbel\Desktop\Project---APC-Clinic-Record-System\Application\apcclinicsystem_sample\web\WEB-INF" />
       <recent name="C:\Users\School.Danya\Desktop\git\Project---APC-Clinic-Record-System\Application\apcclinicsystem_sample\web\templates" />
       <recent name="C:\Users\School.Danya\Desktop\git\Project---APC-Clinic-Record-System\Application\apcclinicsystem_sample\web" />
       <recent name="C:\Users\School.Danya\Desktop\git\Project---APC-Clinic-Record-System\Application\apcclinicsystem_sample\web\WEB-INF" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mlbel\Desktop\Project---APC-Clinic-Record-System\Application\apcclinicsystem_sample\web" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mlbel\Desktop\Project---APC-Clinic-Record-System\Application\apcclinicsystem_sample\web\WEB-INF" />
       <recent name="C:\Users\School.Danya\Desktop\git\Project---APC-Clinic-Record-System\Application\apcclinicsystem_sample\web\templates" />
       <recent name="C:\Users\School.Danya\Desktop\git\Project---APC-Clinic-Record-System\Application\apcclinicsystem_sample\web" />
@@ -769,11 +770,13 @@
       <workItem from="1479958134949" duration="2435000" />
       <workItem from="1479992977682" duration="2245000" />
       <workItem from="1479995400211" duration="358000" />
+      <workItem from="1479996026973" duration="54000" />
+      <workItem from="1479996195333" duration="328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29341000" />
+    <option name="totallyTimeSpent" value="29723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -861,14 +864,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/templates/contents.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/footer.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -896,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,7 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,7 +1205,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/studentF.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="187">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding />
         </state>
@@ -1221,8 +1213,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/facultyF.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
+        <state relative-caret-position="546">
           <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/staffF.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
           <folding />
         </state>
       </provider>
