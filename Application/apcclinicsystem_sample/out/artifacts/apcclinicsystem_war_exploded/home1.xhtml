@@ -5,15 +5,7 @@
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:b="http://bootsfaces.net/ui" xmlns:xlink="http://java.sun.com/jsf/composite">
 <h:body>
-<ui:composition>
-    <div>
-        <ui:insert name="header1" >
-            <ui:include src="/templates/header1.xhtml" />
-        </ui:insert>
-        <ui:insert name="signup" >
-            <ui:include src="/templates/signup.xhtml" />
-        </ui:insert>
-    </div>
+<ui:composition template="templates/common.xhtml">
 </ui:composition>
 </h:body>
 </html>
