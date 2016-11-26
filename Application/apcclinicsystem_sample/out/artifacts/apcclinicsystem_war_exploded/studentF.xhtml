@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:body>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <h:form>
+            <br></br><br></br>
+            ID Number:
+            <h:inputText value="#{register.studIDnum}"/> <br></br><br></br>
+            Last Name:
+            <h:inputText value="#{register.studLname}"/> <br></br><br></br>
+            First Name:
+            <h:inputText value="#{register.studFname}"/> <br></br><br></br>
+            Middle Initial:
+            <h:inputText value="#{register.studMinitial}"/> <br></br><br></br>
+            Gender:
+            <h:selectOneMenu value="#{register.studGender}">
+                <f:selectItems value="#{register.studentF}" var="hPlan" itemLabel="#{studF.studentForm}" itemValue="#{studF.studentForm}" />
+            </h:selectOneMenu>
+            <br></br><br></br>
+            Course:
+            <h:selectOneMenu value="#{register.studCourse}">
+                <f:selectItems value="#{register.studentF}" var="hPlan" itemLabel="#{studF.studentForm}" itemValue="#{studF.studentForm}" />
+            </h:selectOneMenu>
+            <br></br><br></br>
+            Section:
+            <h:selectOneMenu value="#{register.studSection}">
+                <f:selectItems value="#{register.studentF}" var="hPlan" itemLabel="#{studF.studentForm}" itemValue="#{studF.studentForm}" />
+            </h:selectOneMenu>
+            <br></br><br></br>
+            Contact Number:
+            <h:inputText value="#{register.studContact}"/> <br></br><br></br>
+            Email Address:
+            <h:inputText value="#{register.studEmail}"/> <br></br><br></br>
+
+            <br></br> <br></br>
+            <h:commandButton value="Register"
+                             action="#{register.Register}" />
+        </h:form>
+    </fieldset>
+</h:body>
+
+</html>
