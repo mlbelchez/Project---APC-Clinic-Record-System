@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui" xmlns:xlink="http://java.sun.com/jsf/composite">
+<h:body>
+<ui:composition>
+    <div>
+        <ui:insert name="header1" >
+            <ui:include src="/templates/header1.xhtml" />
+        </ui:insert>
+        <ui:insert name="signinsidenav" >
+            <ui:include src="/templates/signinsidenav.xhtml" />
+        </ui:insert>
+    </div>
+<br></br><br></br><br></br>
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email"></input>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Password:</label>
+                <div class="col-sm-5">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password"></input>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-5">
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</input></label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-5">
+                    <a class="btn btn-primary" href="/home.jsf" role="button">Submit</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</ui:composition>
+</h:body>
+</html>
