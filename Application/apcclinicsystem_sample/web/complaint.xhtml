@@ -7,24 +7,22 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:body>
+    <ui:composition>
+        <ui:insert name="header" >
+            <ui:include src="/templates/header.xhtml" />
+        </ui:insert>
+    </ui:composition>
     <fieldset>
-        <legend>Registration Form</legend>
+        <legend>Complaint Form</legend>
         <h:form>
             <br></br><br></br>
             ID Number:
             <h:inputText value="#{register.comIDnum}"/> <br></br><br></br>
             Complaints:
             <h:inputText value="#{register.comComplaint}"/> <br></br><br></br>
-            Medicine Given:
-            <h:inputText value="#{register.comMedicine}"/> <br></br><br></br>
-            Quantity:
-            <h:selectOneMenu value="#{register.comQuantity}">
-                <f:selectItems value="#{register.comF}" var="hPlan" itemLabel="#{comF.complaintForm}" itemValue="#{comF.complaintForm}" />
-            </h:selectOneMenu>
-            <br></br> <br></br>
 
             <br></br> <br></br>
-            <h:commandButton value="Register"
+            <h:commandButton value="Submit"
                              action="#{register.Register}" />
         </h:form>
     </fieldset>

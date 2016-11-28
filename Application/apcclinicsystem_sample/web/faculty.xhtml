@@ -7,6 +7,11 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:body>
+    <ui:composition>
+        <ui:insert name="header" >
+            <ui:include src="/templates/header.xhtml" />
+        </ui:insert>
+    </ui:composition>
     <fieldset>
         <legend>Registration Form</legend>
         <h:form>
@@ -26,11 +31,6 @@
             <br></br><br></br>
             Department:
             <h:selectOneMenu value="#{register.facDept}">
-                <f:selectItems value="#{register.facultyF}" var="hPlan" itemLabel="#{facF.facultyForm}" itemValue="#{facF.facultyForm}" />
-            </h:selectOneMenu>
-            <br></br><br></br>
-            Rank:
-            <h:selectOneMenu value="#{register.facRank}">
                 <f:selectItems value="#{register.facultyF}" var="hPlan" itemLabel="#{facF.facultyForm}" itemValue="#{facF.facultyForm}" />
             </h:selectOneMenu>
             <br></br><br></br>

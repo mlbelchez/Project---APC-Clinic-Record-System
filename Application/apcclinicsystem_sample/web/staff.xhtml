@@ -7,6 +7,11 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:body>
+    <ui:composition>
+        <ui:insert name="header" >
+            <ui:include src="/templates/header.xhtml" />
+        </ui:insert>
+    </ui:composition>
     <fieldset>
         <legend>Registration Form</legend>
         <h:form>
