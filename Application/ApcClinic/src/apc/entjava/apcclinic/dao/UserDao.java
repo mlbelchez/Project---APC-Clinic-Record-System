@@ -12,9 +12,10 @@ import javax.persistence.Persistence;
  */
 public class UserDao implements UserLookupService{
 
-    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("apcclinic");
+    private EntityManagerFactory emf;
 
     public UserDao() {
+        emf = Persistence.createEntityManagerFactory("apcclinic");
     }
 
     @Override

@@ -12,16 +12,22 @@ import javax.persistence.Id;
 public class User {
     private int userId;
     private String username;
+    private String email;
     private String password;
-
-    public User(int userId, String username, String password) {
-        this.userId = userId;
-        this.username = username;
-        this.password = password;
-    }
+    private String userDate;
 
     public User() {
     }
+
+    public User(int userId, String username, String email, String password, String userDate) {
+        this.userId = userId;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.userDate = userDate;
+    }
+
+
 @Id
 @GeneratedValue
     public int getUserId() {
@@ -48,5 +54,23 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Column(nullable=false, length=35)
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Column(nullable=false)
+    public String getUserDate() {
+        return userDate;
+    }
+
+    public void setUserDate(String userDate) {
+        this.userDate = userDate;
     }
 }

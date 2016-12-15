@@ -12,15 +12,15 @@ import javax.persistence.Id;
 public class Complaint {
     private int id;
     private String allergy;
-    private String complaint;
+    private String complaints;
 
     public Complaint() {
     }
 
-    public Complaint(int id, String allergy, String complaint) {
+    public Complaint(int id, String allergy, String complaints) {
         this.id = id;
         this.allergy = allergy;
-        this.complaint = complaint;
+        this.complaints = complaints;
     }
 @Id
 @GeneratedValue
@@ -31,6 +31,7 @@ public class Complaint {
     public void setId(int id) {
         this.id = id;
     }
+
 @Column(nullable = false)
     public String getAllergy() {
         return allergy;
@@ -39,12 +40,13 @@ public class Complaint {
     public void setAllergy(String allergy) {
         this.allergy = allergy;
     }
+
 @Column(nullable = false)
     public String getComplaint() {
-        return complaint;
+        return complaints;
     }
 
     public void setComplaint(String complaint) {
-        this.complaint = complaint;
+        this.complaints = complaint;
     }
 }

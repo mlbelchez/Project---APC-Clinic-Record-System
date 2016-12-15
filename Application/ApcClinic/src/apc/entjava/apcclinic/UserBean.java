@@ -5,13 +5,15 @@ import apc.entjava.apcclinic.dao.UserDao;
 import apc.entjava.apcclinic.model.User;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+import java.io.Serializable;
 
 /**
  * Created by Aira Joyce on 12/15/2016.
  */
-
 @ManagedBean
-public class UserBean {
+@SessionScoped
+public class UserBean implements Serializable {
     private UserLookupService userService = new UserDao();
 
     private User user;
@@ -46,6 +48,14 @@ public class UserBean {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String login() {

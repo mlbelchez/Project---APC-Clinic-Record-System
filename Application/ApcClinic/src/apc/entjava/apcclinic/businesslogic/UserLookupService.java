@@ -9,6 +9,5 @@ import java.util.List;
  */
 public interface UserLookupService {
     void register(User newUser);
-
     User login(String username, String password);
 }

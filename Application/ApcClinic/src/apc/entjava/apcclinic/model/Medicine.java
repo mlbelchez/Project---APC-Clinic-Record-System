@@ -1,5 +1,6 @@
 package apc.entjava.apcclinic.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -32,6 +33,7 @@ public class Medicine {
         this.id = id;
     }
 
+    @Column(nullable = false, length = 2)
     public int getQuantity() {
         return quantity;
     }
@@ -40,6 +42,7 @@ public class Medicine {
         this.quantity = quantity;
     }
 
+    @Column(nullable = false)
     public String getMedicineGiven() {
         return medicineGiven;
     }
