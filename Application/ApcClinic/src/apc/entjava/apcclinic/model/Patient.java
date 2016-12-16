@@ -1,9 +1,6 @@
 package apc.entjava.apcclinic.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -12,6 +9,7 @@ import java.util.Date;
 @Entity
 public class Patient {
 
+    private PatientType patientType;
     private int id;
     private int idNumber;
     private String  lastname;
@@ -20,13 +18,12 @@ public class Patient {
     private String  gender;
     private int age;
     private String DeptOrCourse;
-    private Enum Student,Faculty,Staff;
 
     public Patient() {
     }
 
     public Patient(int id, int idNumber, String lastname, String firstname,
-                   String middleInitial, String gender, int age, String deptOrCourse, Enum student, Enum faculty, Enum staff) {
+                   String middleInitial, String gender, int age, String deptOrCourse) {
         this.id = id;
         this.idNumber = idNumber;
         this.lastname = lastname;
@@ -35,9 +32,7 @@ public class Patient {
         this.gender = gender;
         this.age = age;
         DeptOrCourse = deptOrCourse;
-        Student = student;
-        Faculty = faculty;
-        Staff = staff;
+
     }
     @Id
     @GeneratedValue
@@ -110,31 +105,15 @@ public class Patient {
     public void setDeptOrCourse(String deptOrCourse) {
         DeptOrCourse = deptOrCourse;
     }
-    @Column(nullable=false)
-    public Enum getStudent() {
-        return Student;
+
+    @OneToOne
+    public PatientType getPatientType() {
+
+        return patientType;
     }
 
-    public void setStudent(Enum student) {
-        Student = student;
-    }
-
-    @Column(nullable=false)
-    public Enum getFaculty() {
-        return Faculty;
-    }
-
-    public void setFaculty(Enum faculty) {
-        Faculty = faculty;
-    }
-
-    @Column(nullable=false)
-    public Enum getStaff() {
-        return Staff;
-    }
-
-    public void setStaff(Enum staff) {
-        Staff = staff;
+    public void setPatientType(PatientType patientType) {
+        this.patientType = patientType;
     }
 }
 

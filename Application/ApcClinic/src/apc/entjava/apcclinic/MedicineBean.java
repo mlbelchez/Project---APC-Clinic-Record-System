@@ -53,4 +53,10 @@ public class MedicineBean {
     public void setMedicines(List<Medicine> medicines) {
         this.medicines = medicines;
     }
+
+    public String addMedicine() {
+        this.medicineService.addMedicine(medicine);
+        return ("medicine");
+    }
+
 }

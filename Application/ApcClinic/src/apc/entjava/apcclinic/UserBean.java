@@ -13,8 +13,9 @@ import java.io.Serializable;
  */
 @ManagedBean
 @SessionScoped
-public class UserBean implements Serializable {
-    private UserLookupService userService = new UserDao();
+public class UserBean {
+
+    private UserLookupService userLookupService = new UserDao();
 
     private User user;
     private String username;
@@ -26,6 +27,14 @@ public class UserBean implements Serializable {
             this.user = new User();
         }
         return user;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setUser(User user) {
@@ -50,16 +59,8 @@ public class UserBean implements Serializable {
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String login() {
-        this.user = this.userService.login(this.username, this.password);
+        this.user = this.userLookupService.login(this.username, this.password);
         if(this.user != null) {
             return "main";
         }
@@ -71,10 +72,9 @@ public class UserBean implements Serializable {
 
     public String register() {
         if(user.getPassword().equals(password)) {
-            this.userService.register(user);
+            this.userLookupService.register(user);
             return "login";
         }
         return "register";
     }
-
 }

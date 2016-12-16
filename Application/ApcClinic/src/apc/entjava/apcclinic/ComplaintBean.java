@@ -23,7 +23,6 @@ public class ComplaintBean {
 
     private List<Complaint> ccomplaints;
 
-
     public Complaint getComplaint() {
         if(this.complaint == null){
             this.complaint = new Complaint();
@@ -59,5 +58,10 @@ public class ComplaintBean {
     public void setCcomplaints(List<Complaint> ccomplaints) {
         this.ccomplaints = ccomplaints;
        // return("xml file");
+    }
+
+    public String addComplaint() {
+        this.complaintService.addComplaint(complaint);
+        return ("complaint");
     }
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Patient Form</title>
+</h:head>
+<h:body>
+    <fieldset>
+        <h:form>
+            ID Number: <h:inputText value="#{patientBean.idNumber}"/> <br/>
+            Lastname: <h:inputText value="#{patientBean.lastname}"/> <br/>
+            Firstname: <h:inputText value="#{patientBean.firstname}"/> <br/>
+            Middle Initial: <h:inputText value="#{patientBean.middleInitial}"/> <br/>
+            Gender: <h:inputText value="#{patientBean.gender}"/> <br/>
+            Age: <h:inputText value="#{patientBean.age}"/>
+            Department/Course: <h:inputText value="#{patientBean.deptOrCourse}"/> <br/>
+         <!--   <h:commandButton value="#{complaintBean.submitPatient}"/> <br/> -->
+
+        </h:form>
+    </fieldset>
+</h:body>
+</html>
+

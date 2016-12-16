@@ -42,5 +42,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.8" level="application_server_libraries" />
     <orderEntry type="library" name="mysql:mysql-connector-java:6.0.5" level="project" />
     <orderEntry type="library" name="javax.faces:javax.faces-api:2.2" level="project" />
+    <orderEntry type="library" name="org.glassfish:javax.faces:2.2.14" level="project" />
+    <orderEntry type="library" name="Mojarra-2.2.1" level="application" />
+    <orderEntry type="library" name="bootsfaces-1.0.0" level="project" />
   </component>
 </module>

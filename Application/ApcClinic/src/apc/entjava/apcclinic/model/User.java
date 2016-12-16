@@ -14,22 +14,20 @@ public class User {
     private String username;
     private String email;
     private String password;
-    private String userDate;
 
     public User() {
+
     }
 
-    public User(int userId, String username, String email, String password, String userDate) {
+    public User(int userId, String username, String email, String password) {
         this.userId = userId;
         this.username = username;
         this.email = email;
         this.password = password;
-        this.userDate = userDate;
     }
 
-
-@Id
-@GeneratedValue
+    @Id
+    @GeneratedValue
     public int getUserId() {
         return userId;
     }
@@ -38,7 +36,7 @@ public class User {
         this.userId = userId;
     }
 
-    @Column(nullable=false, length=20)
+    @Column(nullable = false, length = 20)
     public String getUsername() {
         return username;
     }
@@ -47,7 +45,7 @@ public class User {
         this.username = username;
     }
 
-    @Column(nullable=false, length=20)
+    @Column(nullable = false, length = 20)
     public String getPassword() {
         return password;
     }
@@ -56,7 +54,7 @@ public class User {
         this.password = password;
     }
 
-    @Column(nullable=false, length=35)
+    @Column(nullable = false, length = 35)
     public String getEmail() {
         return email;
     }
@@ -65,12 +63,4 @@ public class User {
         this.email = email;
     }
 
-    @Column(nullable=false)
-    public String getUserDate() {
-        return userDate;
-    }
-
-    public void setUserDate(String userDate) {
-        this.userDate = userDate;
-    }
 }

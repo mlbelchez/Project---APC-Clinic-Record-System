@@ -18,13 +18,14 @@ public class PatientBean {
     private PatientService patientService = new PatientDao();
 
     private Patient patient;
+    private String idNumber;
     private String lastname;
     private String firstname;
     private String middleInitial;
     private String gender;
     private int age;
     private String DeptOrCourse;
-    private Enum Student, Faculty, Staff;
+
 
     private List<Patient> patients;
 
@@ -34,6 +35,14 @@ public class PatientBean {
 
     public void setPatient(Patient patient) {
         this.patient = patient;
+    }
+
+    public String getIdNumber() {
+        return idNumber;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
     }
 
     public String getLastname() {
@@ -84,30 +93,6 @@ public class PatientBean {
         DeptOrCourse = deptOrCourse;
     }
 
-    public Enum getStudent() {
-        return Student;
-    }
-
-    public void setStudent(Enum student) {
-        Student = student;
-    }
-
-    public Enum getFaculty() {
-        return Faculty;
-    }
-
-    public void setFaculty(Enum faculty) {
-        Faculty = faculty;
-    }
-
-    public Enum getStaff() {
-        return Staff;
-    }
-
-    public void setStaff(Enum staff) {
-        Staff = staff;
-    }
-
     public List<Patient> getPatients() {
         patients = patientService.getPatient();
         return patients;
@@ -116,6 +101,11 @@ public class PatientBean {
     public void setPatients(List<Patient> patients) {
         this.patients = patients;
         //xml
+    }
+
+    public String addPatient() {
+        this.patientService.addPatient(patient);
+        return ("");
     }
 
 }

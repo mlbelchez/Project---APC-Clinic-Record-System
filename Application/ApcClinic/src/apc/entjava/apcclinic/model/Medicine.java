@@ -1,9 +1,6 @@
 package apc.entjava.apcclinic.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by Aira Joyce on 12/14/2016.
@@ -11,6 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class Medicine {
 
+    private Complaint complaint;
     private int id;
     private int quantity;
     private String medicineGiven;
@@ -23,6 +21,7 @@ public class Medicine {
         this.quantity = quantity;
         this.medicineGiven = medicineGiven;
     }
+
     @Id
     @GeneratedValue
     public int getId() {
@@ -49,5 +48,14 @@ public class Medicine {
 
     public void setMedicineGiven(String medicineGiven) {
         this.medicineGiven = medicineGiven;
+    }
+
+@ManyToOne
+    public Complaint getComplaint() {
+        return complaint;
+    }
+
+    public void setComplaint(Complaint complaint) {
+        this.complaint = complaint;
     }
 }
