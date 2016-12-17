@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Patient Form</title>
+</h:head>
+<h:body>
+    <fieldset>
+        <h:form>
+            Patient Type: <h:selectOneMenu
+                converter="#{patientTypeBean}"
+                value="#{patientBean.patient.patientType}">
+            <f:selectItems value="#{patientBean.patientTypes}" var="type" itemLabel="#{type.typeName}" itemValue="#{type.id}"/>
+        </h:selectOneMenu>
+            ID Number: <h:inputText value="#{patientBean.patient.idNumber}"/> <br/>
+            Lastname: <h:inputText value="#{patientBean.patient.lastname}"/> <br/>
+            Firstname: <h:inputText value="#{patientBean.patient.firstname}"/> <br/>
+            Middle Initial: <h:inputText value="#{patientBean.patient.middleInitial}"/> <br/>
+            Gender: <h:inputText value="#{patientBean.patient.gender}"/> <br/>
+            Age: <h:inputText value="#{patientBean.patient.age}"/>
+            Department/Course: <h:inputText value="#{patientBean.patient.deptOrCourse}"/> <br/>
+            <h:commandButton value="Submit" action="#{patientBean.addPatient}"/> <br/>
+        </h:form>
+    </fieldset>
+</h:body>
+</html>
+
